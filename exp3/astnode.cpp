@@ -209,7 +209,6 @@ int NFunDec::parse() {
 
   spaces += 2;
   parseNIdentifier(Id);
-  // Id.parse();
   printspaces();
   std::cout << "LP" << std::endl;
   if (arguments)
@@ -295,8 +294,7 @@ std::string NStructSpecifier::parse() {
 
       spaces += 2;
       printspaces();
-      std::cout << "ID"
-                << ": " << tag->name << std::endl;
+      std::cout << "ID: " << tag->name << std::endl;
       spaces -= 2;
     }
     printspaces();
@@ -309,8 +307,7 @@ std::string NStructSpecifier::parse() {
 
     spaces += 2;
     printspaces();
-    std::cout << "ID"
-              << ": " << tag->name << std::endl;
+    std::cout << "ID: " << tag->name << std::endl;
     spaces -= 2;
   }
   spaces -= 2;
